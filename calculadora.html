@@ -7,6 +7,45 @@
   <title>Calculadora Básica</title>
 </head>
 <body>
+	<form>
+		<table>
+			<tr>
+				<td>
+					<label for="nombre">Nombre:</label>
+				</td>
+				<td>
+				<input type="text" name="nombre" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="numero">Numero del 1-10:</label>
+				</td>
+				<td>
+					<input type="number" name="numero1" pattern="[/1-10]{2}" required>
+					<input type="number" name="numero2" pattern="[/1-10]{2}" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="numero">Operación:</label>
+				</td>
+				<td>
+					<select name="operacion" required>
+						<option value="1">Suma</option>
+						<option value="2">Resta</option>
+						<option value="3">Multiplica</option>
+						<option value="4">Divide</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit" onclick="operacion()">Enviar</button> 	
+				</td>
+			</tr>
+		</table>
+	</form>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
