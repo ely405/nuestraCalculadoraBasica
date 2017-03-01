@@ -9,14 +9,14 @@
 <body>
   <div>
     <h1>Calculadora Básica</h1>
-
-    <form>
+    <form onsubmit="return false" >
       <label for="name">Ingresa tu nombre:</label>
-      <input type="text" id="name"><br><br>
+      <input type="text" id="name" required><br><br>
       <label for="firstNumber">Ingresa un número del 1 al 10:</label>
-      <input type="number" id="firstNumber"><br><br>
+      <input type="number" id="firstNumber"  required><br><br>
       <label for="operador">Escoge tu operación:</label>
-      <select id="operador">
+      <select id="operador"  required>
+        <option value selected disabled>Elige la operación</option>
         <option value="suma">suma</option>
         <option value="resta">resta</option>
         <option value="division">división</option>
@@ -30,6 +30,9 @@
 <button type="submit" name="siContinua" onclick="continuaOperando(); return false"><strong>SI</strong></button>
 <button type="submit" name="noContinua" onclick="imprimeResult(); return false"><strong>NO</strong></button>
 
-
+    </form>
+  </div>
+  <div id="result"></div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
