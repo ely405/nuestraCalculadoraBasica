@@ -5,8 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculadora Básica</title>
+
 </head>
+
 <body>
+  <form id="calculadora">
+    <fieldset>
+      <legend>Calculadora Basica</legend>
+
+      <label for="nombre">Escribe tu nombre:</label>
+      <input type="text" name="nombre" id="nombre" required=""/>
+      <br><br>
+
+      <label for="primernumero">Elige un numero:</label>
+      <input type="text" name="primernumero" id="primernumero" required=""/>
+      <br><br>
+
+      <select name="" id="" required>
+        <option value="">Elige una operacion</option>
+        <option value="Suma">Suma</option>
+        <option value="Resta">Resta</option>
+        <option value="Multiplicacion">Multiplicacion</option>
+        <option value="Division">Division</option>
+      </select>
+      <br><br>
+
+      <label for="segnumero">Elige otro numero:</label>
+      <input type="text" name="segnumero" id="segnumero"/>
+      <br><br>
+
+      <input type="submit" name="" value="Calcular Operacion">
+      <input type="submit" name="" value="Continuar">
+
+
+      <a href="#" onclick="calcularop();"></a>
+
+    </fieldset>
+  </form>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
