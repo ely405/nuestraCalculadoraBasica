@@ -9,7 +9,10 @@
 <body>
   <div>
     <h1>Calculadora Básica</h1>
-    <form onsubmit="return false" >
+
+
+    <form onsubmit="return false" class="clase">
+
       <label for="name">Ingresa tu nombre:</label>
       <input type="text" id="name" required><br><br>
       <label for="firstNumber">Ingresa un número del 1 al 10:</label>
@@ -26,8 +29,9 @@
       <input type="number" id="secondNumber"  required><br><br>
       <label for="continuaONo">¿Quieres seguir operando?</label>
 
-      <button type="submit" name="siContinua" onclick="continuaOperando(); return false"><strong>SI</strong></button>
-      <button type="submit" name="noContinua" onclick="imprimeResult(); return false"><strong>NO</strong></button>
+<button type="submit" name="siContinua" onclick="continuaOperando(); return false"><strong>SI</strong></button>
+<button type="submit" name="noContinua" onclick="imprimeResult(); return false"><strong>NO</strong></button>
+
 
     </form>
   </div>
