@@ -1,5 +1,4 @@
 
-
 function imprimeResult(){
   var nombre = document.getElementById("name").value;
   var num1 = document.getElementById("firstNumber").value;
@@ -12,4 +11,5 @@ function imprimeResult(){
                     (op == "multiplicacion")? parseInt(num1)*parseInt(num2): "";
 
     document.getElementById("result").innerHTML = "hola " + nombre + " el resultado de tu operación es " + resultado;
+
 }
