@@ -1,18 +1,16 @@
-
-
-
-function operacion (){
-  var suma       = document.getElementById('num1').value + document.getElementById('num2').value;
-  var resta      = document.getElementById('num1').value - document.getElementById('num2').value;
-  var multiplica = document.getElementById('num1').value * document.getElementById('num2').value;
-  var divide     = document.getElementById('num1').value / document.getElementById('num2').value;
-
-}
-function print (){
-  var record = document.getElementById('id');
-  algo == "suma"          ? r=suma:
-  algo == "resta"         ? r= resta:
-  algo =="multiplicacion" ? r=multiplica:
-  algo == "division"      ? r= divide: alert('mal');
-  record.innerHTMML= r;
+// imprime el resultado  cunado ya no se quiere seguir operando
+function imprimeResult(){
+  var all    = document.getElementsByClassName('clase');
+  var nombre = document.getElementById("name").value;
+  var num1   = document.getElementById("firstNumber").value;
+  var num2   = document.getElementById("secondNumber").value;
+  var op     = document.getElementById("operador").value;
+  if (all[0].value.length == "" || all[1].value.length == 0 || all[2].value.length == 0 || all[3].value.length == 0  ){
+  }
+  else{
+  var resultado = (op == "suma")? parseInt(num1)+parseInt(num2) :
+                  (op == "resta")? parseInt(num1)-parseInt(num2):
+                  (op == "division")? parseInt(num1)/parseInt(num2):
+                  (op == "multiplicacion")? parseInt(num1)*parseInt(num2): "";
+  }
 }

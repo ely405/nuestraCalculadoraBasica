@@ -7,34 +7,29 @@
   <title>Calculadora Básica</title>
 </head>
 <body>
-  <h1>Calculadora</h1>
-  <table>
-    <tr>
-      <td><label for="nombre">Ingresa tu nombre </label></td>
-      <td><input type="text" name="nnombre" id="nombre" required=""></td>
-    </tr>
-    <tr>
-      <td><label for="num1">Ingresa un numero del 1 al 10 </label></td>
-      <td><input type="number" name="aapellido" id="num1" required=""></td>
-    </tr>
-    <tr>
-      <select name="" required>
-        <option value="">Escoge tu carro</option>
-        <option value="value1" >mas(+)</option>
-        <option value="value2" >menos(-)</option>
-        <option value="value3">por(*)</option>
-        <option value="value3">entre(/)</option>
-      </select>
-    </tr>
-    <tr>
-      <td><label for="num2">Ingresa Segundo Numero</label></td>
-      <td><input id="mun2" type="text" name="num2" required="" ></td>
-    </tr>
-  </table>
-  <button type="button" name="button"></button>
-
-
-  <input type="text" name="" value="">
+  <div>
+    <h1>Calculadora Básica</h1>
+    <form onsubmit="return false" class="clase">
+      <label for="name">Ingresa tu nombre:</label>
+      <input type="text" id="name" required><br><br>
+      <label for="firstNumber">Ingresa un número del 1 al 10:</label>
+      <input type="number" id="firstNumber"  required><br><br>
+      <label for="operador">Escoge tu operación:</label>
+      <select id="operador"  required>
+        <option value selected disabled>Elige la operación</option>
+        <option value="suma">suma</option>
+        <option value="resta">resta</option>
+        <option value="division">división</option>
+        <option value="multiplicacion">multiplicación</option>
+      </select><br><br>
+      <label for="secondNumber">Ingresa otro número del 1 al 10:</label>
+      <input type="number" id="secondNumber"  required><br><br>
+      <label for="continuaONo">¿Quieres seguir operando?</label>
+      <button type="submit" name="siContinua" onclick="continuaOperando(); return false"><strong>SI</strong></button>
+      <button type="submit" name="noContinua" onclick="imprimeResult(); return false"><strong>NO</strong></button>
+    </form>
+  </div>
+  <div id="result"></div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
