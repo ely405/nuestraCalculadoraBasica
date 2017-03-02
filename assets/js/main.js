@@ -12,7 +12,7 @@ function imprimeResult(){
 
     document.getElementById("result").innerHTML = "hola " + nombre + " el resultado de tu operación es " + resultado;
 
-
+}
 function continuaOperando(){
   var nombre = document.getElementById("name").value;
   var num1 = document.getElementById("firstNumber").value;
